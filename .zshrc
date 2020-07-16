@@ -1,7 +1,7 @@
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT=$'%F{green}%~%f %F{black}${vcs_info_msg_0_}%f\n$ '
-RPROMPT='%F{yellow}$AWS_PROFILE%f'
+RPROMPT='%F{yellow}aws: $AWS_PROFILE%f'
 
 ## Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:git:*' formats '%b'
